@@ -22,7 +22,7 @@ export function AdminSettings({ user, initial }: { user: string; initial: Compan
   return (
     <main className="admin-shell">
       <aside>
-        <a className="brand" href="/"><span className="brand-mark">ㄸ</span><span>뚜둔 <b>NEXT</b></span></a>
+        <a className="brand" href="/"><span className="brand-mark">AI</span><span>AI유니패스 파트너</span></a>
         <nav><b>관리자 설정</b><a className="active" href="#company">회사 정보</a><a href="#ai">AI 연결</a><a href="#privacy">개인정보·보안</a></nav>
         <a href="/">← 공개 화면으로</a>
       </aside>
@@ -32,7 +32,7 @@ export function AdminSettings({ user, initial }: { user: string; initial: Compan
           <div className="admin-card-head"><div><h2>회사 정보</h2><p>비어 있는 항목은 공개 화면에 표시되지 않습니다.</p></div><span className="safe-chip">비공개 기본값</span></div>
           <div className="form-grid">
             {[
-              ["name", "상호명", "예: 뚜둔랩스"],
+              ["name", "상호명", "예: AI유니패스 파트너 운영사"],
               ["representative", "대표자명", "대표자 또는 개인정보 보호책임자"],
               ["registrationNumber", "사업자등록번호", "000-00-00000"],
               ["phone", "고객센터", "연락 가능한 번호"],

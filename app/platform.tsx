@@ -75,9 +75,9 @@ export function Platform({ company }: { company: CompanySettings | null }) {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="뚜둔 넥스트 홈">
-          <span className="brand-mark">ㄸ</span>
-          <span>뚜둔 <b>NEXT</b></span>
+        <a className="brand" href="#top" aria-label="AI유니패스 파트너 홈">
+          <span className="brand-mark">AI</span>
+          <span>AI유니패스 파트너</span>
         </a>
         <nav aria-label="주요 메뉴">
           <a href="#journeys">서비스</a>
@@ -165,7 +165,7 @@ export function Platform({ company }: { company: CompanySettings | null }) {
         </div>
         <div className="workspace-demo">
           <div className="demo-header">
-            <div><span className="brand-mark small">ㄸ</span><b>AI 가이드</b></div>
+            <div><span className="brand-mark small">AI</span><b>AI 가이드</b></div>
             <span className="status-wait">모델 연결 대기</span>
           </div>
           <div className="chat-area">
@@ -201,7 +201,7 @@ export function Platform({ company }: { company: CompanySettings | null }) {
       </section>
 
       <footer>
-        <div className="footer-brand"><span className="brand-mark">ㄸ</span><b>뚜둔 NEXT</b><p>상담과 활동 사이, 다음 선택을 선명하게.</p></div>
+        <div className="footer-brand"><span className="brand-mark">AI</span><b>AI유니패스 파트너</b><p>상담과 활동 사이, 다음 선택을 선명하게.</p></div>
         <div className="footer-links"><a href="#journeys">서비스</a><a href="#trust">안심 기준</a><a href="/admin">관리자 설정</a></div>
         {company && (
           <div className="company-info">
@@ -209,14 +209,14 @@ export function Platform({ company }: { company: CompanySettings | null }) {
             {[company.representative, company.registrationNumber, company.address, company.phone, company.email].filter(Boolean).join(" · ")}
           </div>
         )}
-        <p className="copyright">© 2026 DDUDUN NEXT. 관리자 설정에서 회사 정보를 입력하기 전에는 공개되지 않습니다.</p>
+        <p className="copyright">© 2026 AI UNIPASS PARTNER. 관리자 설정에서 회사 정보를 입력하기 전에는 공개되지 않습니다.</p>
       </footer>
 
       {workspaceOpen && (
         <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setWorkspaceOpen(false)}>
           <section className="intake-modal" role="dialog" aria-modal="true" aria-label={`${selected.eyebrow} 시작`}>
             <div className="modal-head">
-              <div><span className="brand-mark small">ㄸ</span><b>{selected.eyebrow} 워크스페이스</b></div>
+              <div><span className="brand-mark small">AI</span><b>{selected.eyebrow} 워크스페이스</b></div>
               <button aria-label="닫기" onClick={() => setWorkspaceOpen(false)}>×</button>
             </div>
             <div className="progress"><span style={{ width: `${progress}%` }} /></div>

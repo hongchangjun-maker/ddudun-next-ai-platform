@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { sites } from "./build/sites-vite-plugin";
 
-const DDUDUN_DATABASE_ID = "598def5a-92c5-4ca5-854e-0e02d21c0cc0";
+const AI_UNIPASS_DATABASE_ID = "598def5a-92c5-4ca5-854e-0e02d21c0cc0";
 
 const { d1, r2 } = hostingConfig;
 
@@ -18,7 +18,7 @@ const localBindingConfig = {
         {
           binding: d1,
           database_name: "ddudun-next-ai-platform-db",
-          database_id: DDUDUN_DATABASE_ID,
+          database_id: AI_UNIPASS_DATABASE_ID,
         },
       ]
     : [],

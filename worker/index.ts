@@ -56,7 +56,7 @@ const worker = {
         return new Response("관리자 인증이 필요합니다.", {
           status: 401,
           headers: {
-            "www-authenticate": 'Basic realm="DDUDUN NEXT Admin", charset="UTF-8"',
+            "www-authenticate": 'Basic realm="AI Unipass Partner Admin", charset="UTF-8"',
             "cache-control": "no-store",
             "content-type": "text/plain; charset=utf-8",
           },
@@ -65,8 +65,8 @@ const worker = {
 
       const headers = new Headers(request.headers);
       headers.delete("authorization");
-      headers.set("x-ddudun-admin-authorized", "1");
-      headers.set("x-ddudun-admin-user", expectedUser);
+      headers.set("x-ai-unipass-admin-authorized", "1");
+      headers.set("x-ai-unipass-admin-user", expectedUser);
       request = new Request(request, { headers });
     }
 

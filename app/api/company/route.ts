@@ -2,7 +2,7 @@ import { headers } from "next/headers";
 import { getCompanySettings, saveCompanySettings, type CompanySettings } from "../../lib/company";
 
 async function isAdmin() {
-  return (await headers()).get("x-ddudun-admin-authorized") === "1";
+  return (await headers()).get("x-ai-unipass-admin-authorized") === "1";
 }
 
 export async function GET() {
