@@ -45,7 +45,7 @@ export function AdminSettings({ user, initial }: { user: string; initial: Compan
           <div className="admin-actions"><p>{status}</p><button onClick={save}>변경사항 저장</button></div>
         </div>
         <div className="admin-card muted" id="ai"><h2>AI 연결</h2><p>현재 공개 화면은 모델 미연결 상태를 명확히 표시합니다. 실제 AI 연결 시 서버 측 비밀키와 검증된 안내 정책이 필요합니다.</p><span className="status-wait">연결 대기</span></div>
-        <div className="admin-card muted" id="privacy"><h2>개인정보·보안</h2><p>관리자 화면은 ChatGPT 로그인을 요구합니다. 공개 배포 전에는 별도 관리자 허용 목록과 보관·파기 정책을 설정하세요.</p></div>
+        <div className="admin-card muted" id="privacy"><h2>개인정보·보안</h2><p>관리자 화면과 회사 정보 변경 API는 Cloudflare에 저장된 비밀 인증값으로 보호됩니다. 비밀번호는 소스 코드나 데이터베이스에 저장되지 않습니다.</p></div>
       </section>
     </main>
   );
