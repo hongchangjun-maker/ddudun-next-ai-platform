@@ -100,11 +100,12 @@ img { display: block; max-width: 100%; }
   margin: 0;
   max-width: 760px;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(57px, 5.8vw, 92px);
+  font-size: clamp(54px, 5vw, 82px);
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -.065em;
   text-wrap: balance;
+  word-break: keep-all;
 }
 .hero h1 em, .intro-copy h2 em, .workspace-copy h2 em, .trust-title h2 em, .closing h2 em {
   color: #e0c398;
